@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 16px;
+ overflow-x: hidden;
+ cursor: default;
+ max-width: 100%;
+}
+
+ nav{
+    padding: 30px 150px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ 
+}
+nav ul{
+    display: flex;
+   gap: 20px;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color:  hsl(228, 39%, 23%);
+    font-weight: 500;
+}
+nav ul li a:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+ button{
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+    background-color:  hsl(12, 88%, 59%);
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 5px hsla(12, 88%, 59%, 0.313);
+}
+.bg{
+    position: absolute;
+    height: 770px;
+    width: 250px;
+    background: hsla(12, 88%, 59%, 0.121);
+    top: -270px;
+    right: 0;
+    z-index: -99;
+    transform: rotate(50deg);
+    border-radius: 0 0 100px 100px;
+}
+section{
+    padding: 10px 150px;
+ 
+}
+.intero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intero img{
+    width: 40%;
+}
+.intero .des{
+    max-width: 50%;
+
+}
+.intero h1{
+    font-size: 45px;
+}
+ p{
+color: hsl(227, 12%, 61%);
+margin: 10px 0;
+}
+.intero  p{
+    max-width: 74%;
+    line-height: 1.4;
+    margin-bottom: 20px;
+
+}
+.box{
+    display: flex;
+   gap: 50px;
+}
+.box .txt{
+    display: flex;
+    flex-direction: column;
+}
+.box .txt .col{
+    display: flex;
+    gap: 20px;
+   
+    align-items: center;
+}
+.box .txt .col strong{
+    padding: 5px 15px;
+    color: white;
+    border: none;
+    outline: none;
+    background: hsl(12, 88%, 59%);
+    border-radius: 50px;
+    font-weight: 400;
+}
+.box .txt  p{
+    padding:0 20px 0 65px;
+    font-weight: 400;
+}
+.bgl{
+    position: absolute;
+    height: 770px;
+    width: 200px;
+    background: hsla(12, 88%, 59%, 0.121);
+   top: 550px;  
+    left: -200px;
+    z-index: -99;
+    transform: rotate(50deg);
+    border-radius: 110px 110px 0 0;
+}
+.pov{
+    text-align: center;
+    padding: 0;
+    margin-top: 50px;
+}
+.pov h2{
+    margin-bottom: 70px;
+}
+.grid{
+    padding: 0;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+   
+    gap: 20px;
+    
+}
+.pov .box {
+    display: flex;
+    flex-direction: column;
+padding:50px 10px 10px 20px;
+    position: relative;
+background: hsl(13, 100%, 96%);
+border-radius: 3px;
+margin-bottom: 40px;
+}
+.pov .box img{
+   height: 50px;
+   position: absolute;
+   top: -20px;
+   left: 45%;
+}
+.pov .box span{
+    font-weight: 700;
+}
+.pov .box p{
+    margin-top: -40px;
+    font-weight: 400;
+}
+.feature{
+    height: 100%;
+    background: hsl(12, 88%, 59%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 30px 150px;
+    align-items: center;
+    background-image: url(images/bg-simplify-section-desktop.svg);
+    background-position: center;
+    background-size: cover;
+}
+.feature h2{
+    max-width: 35%;
+    font-weight: 500;
+}
+.feature .btn{
+    background: white;
+  
+    color: hsl(12, 88%, 59%);
+font-weight: 700;
+    box-shadow: none;
+   
+}
+footer{
+    background: hsl(233, 12%, 13%);
+    padding: 50px 150px;
+   
+}
+footer .row{
+    display: flex;
+    justify-content: space-between;
+}
+footer .row .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+footer .icons{
+    display: flex;
+  gap: 10px;
+}
+footer .row .col li{
+    list-style: none;
+}
+footer .row .col a{
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+    opacity: 80%;
+}
+footer .row .col a:hover{
+    color: hsl(12, 88%, 59%);
+    cursor: pointer;
+   
+}
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+footer input{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+}
+footer p{
+ text-align: end;
+}
+button:hover{
+    opacity: 70%;
+    cursor: pointer;
+    
+}
+nav .menu{
+    display: none;
+}
+@media screen and (max-width: 376px) {
+  body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+    nav ul ,nav button{
+        display: none;
+       
+    }
+    nav{
+         padding: 50px ;
+    }
+    nav .menu{
+        display: block;
+    }
+    .intero{
+        flex-direction: column-reverse;
+    }
+    section{
+        padding: 50px 20px;
+    }
+     .intero .des{
+    max-width: 100%;
+    text-align: center;
+    }
+   
+     .des h1 {
+        font-size: 32px;
+    }
+    .des h2{
+        font-size: 30px;
+    }
+     .des p{
+        max-width: 100%;
+    }
+    .intero img{
+        width: 100%;
+    }
+    .box .des{
+        max-width: 100%;
+        text-align: center;
+        }
+    
+    .box{
+        flex-direction: column;
+    }
+    .box .col{
+        background: hsla(12, 88%, 59%, 0.347);
+        border-radius:   50px 0 0 50px ;
+        margin-right: -40px;
+        width: 100%;
+    }
+    .box .row p{
+        margin-left: -70px;
+    }
+    .pov .grid{
+       grid-template-columns: 95%;
+       padding: 0 20px;
+    }
+    .pov .grid .box:nth-child(2),
+    .pov .grid .box:nth-child(3){
+        display: none;
+    }
+    .circles{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .pov .circle:nth-child(2){
+        background: hsl(12, 88%, 59%);
+    }
+    .pov .circle{
+        height: 10px;
+        width: 10px;
+        border: 1px solid hsl(12, 88%, 59%);
+        border-radius: 50%;
+    }
+    .feature{
+        flex-direction: column;
+        padding:  50px;
+    }
+    .feature h2{
+        text-align: center;
+        max-width: 100%;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    button{
+        padding: 10px 30px;
+       
+    }
+    footer{
+        padding: 50px;
+    }
+    footer .row{
+        flex-direction: column-reverse;
+       
+    }
+    .ipt{
+        display: flex;
+        margin-bottom: 40px;
+    }
+     input{
+        padding: 5px 20px;
+    }
+    .links{
+        display: flex;
+     margin-left: 30px;
+       font-size: 12px;
+    }
+    footer .logo{
+        width: 50%;
+       margin: 20px 70px 0 70px;
+    }
+    .icons{
+       justify-content: space-evenly;
+    }
+    .icons img{
+        width: 150%;
+    }
+    footer p{
+        text-align: center;
+        font-size: 12px;
+       
+    }
+    .bg{
+        right: -150px;
+    }
+    .bgl{
+      left:420px;
+      top: 190px;
+      border-radius: 0 0 100px 100px;
+    }
+    
+    
+}
